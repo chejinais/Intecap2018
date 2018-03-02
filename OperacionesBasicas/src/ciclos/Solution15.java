@@ -19,34 +19,31 @@ public class Solution15 {
 		// System.out.println(numeroDos);
 
 		for (int i = 0; i <= hastaDonde; i++) {
-			
+
 			acumulador = numeroUno;
 			numeroUno = numeroDos;
 			numeroDos = acumulador + numeroUno;
-			
-			if(numeroDos>hastaDonde) {
-				
-				System.out.println(" ");
-				
-				
-			}else {
-				System.out.println(numeroDos);
-				
-			}
-			
-			
 
-			if (numeroDos>=hastaDonde) {
+			if(numeroDos<=hastaDonde) {
+				System.out.println(numeroDos);
+			}
+			/*
+			if (numeroDos > hastaDonde) {
+
+				System.out.println(" ");
+
+			} else {
 				
+
+			}*/
+
+			if (numeroDos >= hastaDonde) {
+
 				i = numeroDos;
 
 			}
-			
-			
-			
 
 		}
-		
 
 	}
 
