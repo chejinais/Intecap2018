@@ -12,7 +12,7 @@ public class Solution13 {
 		int numero=entrada.nextInt();
 		int bandera=0;
 		
-		for(int i=1;i<numero;i++) {
+		for(int i=2;i<=(numero/2);i++) {
 			if(numero%i==0) {
 				bandera++;
 				
@@ -20,11 +20,11 @@ public class Solution13 {
 			}
 			
 		}
-		if(bandera>2) {
-			System.out.println("No es primo");
+		if(bandera==0) {
+			System.out.println("Es primo");
 			
 		}else {
-			System.out.println("Es primo");
+			System.out.println("No es primo");
 		}
 
 	}
