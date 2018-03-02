@@ -34,27 +34,24 @@ public class Solution11 {
 
 			binarioAcumulado = binarioAcumulado + binario;
 
-			
-
-			//Esta es la parte que detiene el ciclo 
+			// Esta es la parte que detiene el ciclo
 
 			if (numero == 1) {
 				i = 1;
-				
 
 			}
 			numero = cociente;
 
 		}
-		
-		String invertida="";
-		
-		//esta es la parte que invierte el string
-		
-		for (int x=binarioAcumulado.length()-1;x>=0;x--) {
+
+		String invertida = "";
+
+		// esta es la parte que invierte el string
+
+		for (int x = binarioAcumulado.length() - 1; x >= 0; x--) {
 			invertida = invertida + binarioAcumulado.charAt(x);
 		}
-		
+
 		System.out.println(invertida);
 
 	}
