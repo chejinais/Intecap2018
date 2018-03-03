@@ -36,7 +36,7 @@ public class Solution12 {
 		}
 		if (diferente > 0) {
 			System.out.println("Invalido");
-			i = 0;
+			
 
 		} else {
 
