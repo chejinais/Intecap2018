@@ -9,7 +9,7 @@ public class Solution10 {
 
 		System.out.println("Ingrese un texto");
 
-		String texto = entrada.next();
+		String texto = entrada.nextLine();
 		int longitud=texto.length();
 		
 		for(int i=longitud;i>=1;i--) {
