@@ -10,7 +10,7 @@ public class Solucion9 {
 
 		System.out.println("Ingrese un texto");
 
-		String texto = entrada.next();
+		String texto = entrada.nextLine();
 
 		for (int i = 1; i <= texto.length(); i++) {
 
