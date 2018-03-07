@@ -18,6 +18,11 @@ public class Solution11 {
 		numero = entrada.nextInt();
 
 		int contador = 0;
+		
+		if(numero==0) {
+			System.out.println("0");
+			
+		}else {
 
 		for (int i = numero; i >= 1; i--) {
 
@@ -45,8 +50,9 @@ public class Solution11 {
 		}
 		
 		System.out.println(binarioAcumulado);
+		}
 
-		String invertida = "";
+		//String invertida = "";
 
 		// esta es la parte que invierte el string
 

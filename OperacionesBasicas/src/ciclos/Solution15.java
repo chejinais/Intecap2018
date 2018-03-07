@@ -14,35 +14,37 @@ public class Solution15 {
 		System.out.println("Ingrese un numero");
 		hastaDonde = entrada.nextInt();
 
-		System.out.println(numeroUno);
-		System.out.println(numeroDos);
-		// System.out.println(numeroDos);
+		if (hastaDonde == 0) {
+			System.out.println(numeroUno);
 
-		for (int i = 0; i <= hastaDonde; i++) {
-
-			acumulador = numeroUno;
-			numeroUno = numeroDos;
-			numeroDos = acumulador + numeroUno;
-
-			if(numeroDos<=hastaDonde) {
+		} else {
+			if (hastaDonde == 1) {
+				System.out.println(numeroUno);
 				System.out.println(numeroDos);
-			}
-			/*
-			if (numeroDos > hastaDonde) {
-
-				System.out.println(" ");
-
 			} else {
-				
 
-			}*/
+				System.out.println(numeroUno);
+				System.out.println(numeroDos);
+				// System.out.println(numeroDos);
 
-			if (numeroDos >= hastaDonde) {
+				for (int i = 0; i <= hastaDonde; i++) {
 
-				i = numeroDos;
+					acumulador = numeroUno;
+					numeroUno = numeroDos;
+					numeroDos = acumulador + numeroUno;
+
+					if (numeroDos <= hastaDonde) {
+						System.out.println(numeroDos);
+					}
+
+					if (numeroDos >= hastaDonde) {
+
+						i = numeroDos;
+
+					}
+				}
 
 			}
-
 		}
 
 	}

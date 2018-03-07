@@ -7,7 +7,7 @@ public class Solution12 {
 	public static void main(String[] args) {
 		double resultado = 0;
 		double acumulador = 0;
-		int contador = 0;
+		int exponente = 0;
 		int diferente = 0;
 
 		String binario;
@@ -27,10 +27,10 @@ public class Solution12 {
 
 			int numeroDecimal = Integer.parseInt(binario.substring(i, i + 1));
 
-			resultado = numeroDecimal * (Math.pow(2, contador));
+			resultado = numeroDecimal * (Math.pow(2, exponente));
 
 			acumulador += resultado;
-			contador++;
+			exponente++;
 
 		}
 		if (diferente > 0) {
