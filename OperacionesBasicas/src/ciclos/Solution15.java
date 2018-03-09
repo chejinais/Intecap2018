@@ -13,38 +13,33 @@ public class Solution15 {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Ingrese un numero");
 		hastaDonde = entrada.nextInt();
+		
+		
+		if(hastaDonde ==0) {
+			System.out.println(numeroUno);	
+		}else {
 
-		if (hastaDonde == 0) {
-			System.out.println(numeroUno);
+		System.out.println(numeroUno);
+		System.out.println(numeroDos);
+		// System.out.println(numeroDos);
 
-		} else {
-			if (hastaDonde == 1) {
-				System.out.println(numeroUno);
+		for (int i = 0; i <= hastaDonde; i++) {
+
+			acumulador = numeroUno;
+			numeroUno = numeroDos;
+			numeroDos = acumulador + numeroUno;
+
+			if (numeroDos <= hastaDonde) {
 				System.out.println(numeroDos);
-			} else {
+			}
 
-				System.out.println(numeroUno);
-				System.out.println(numeroDos);
-				// System.out.println(numeroDos);
+			if (numeroDos >= hastaDonde) {
 
-				for (int i = 0; i <= hastaDonde; i++) {
-
-					acumulador = numeroUno;
-					numeroUno = numeroDos;
-					numeroDos = acumulador + numeroUno;
-
-					if (numeroDos <= hastaDonde) {
-						System.out.println(numeroDos);
-					}
-
-					if (numeroDos >= hastaDonde) {
-
-						i = numeroDos;
-
-					}
-				}
+				i = numeroDos;
 
 			}
+		}
+
 		}
 
 	}
